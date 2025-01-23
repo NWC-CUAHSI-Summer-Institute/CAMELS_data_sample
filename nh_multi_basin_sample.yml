@@ -17,7 +17,7 @@ test_start_date: "01/10/2005"
 test_end_date: "30/09/2006"
 
 # which GPU (id) to use [in format of cuda:0, cuda:1 etc, or cpu or None]
-device: cpu
+device: cuda:0
 
 # --- Validation configuration ---------------------------------------------------------------------
 
@@ -108,7 +108,7 @@ save_weights_every: 1
 dataset: camels_us
 
 # Path to data set root
-data_dir: /home/jovyan/CAMELS_data_sample
+data_dir: .
 
 # Forcing product [daymet, maurer, maurer_extended, nldas, nldas_extended, nldas_hourly]
 # can be either a list of forcings or a single forcing product
